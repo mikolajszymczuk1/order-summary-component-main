@@ -1,2 +1,10 @@
 // Base styles
 @use "./utilities/base";
+
+// ==== Components ====
+
+// Background pattern component
+@use "./components/pattern-background";
+
+// Order summary card component
+@use "./components/order-summary";
