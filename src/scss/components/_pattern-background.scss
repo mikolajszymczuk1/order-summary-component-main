@@ -1,0 +1,21 @@
+// Styles for patter background decoration component
+.pattern {
+    &__image {
+        width: 100%;
+        height: auto;
+
+        &--mobile {
+            @media screen and (min-width: 1024px) {
+                display: none;
+            }
+        }
+    
+        &--desktop {
+            display: none;
+
+            @media screen and (min-width: 1024px) {
+                display: block;
+            }
+        }
+    }
+}
