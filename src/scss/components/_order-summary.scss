@@ -1,0 +1,161 @@
+@use "../utilities/colors" as *;
+@use "../utilities/fonts" as *;
+
+// Styles for order summary card component
+.order-summary {
+    margin: 70px auto;
+
+    width: 85%;
+
+    background-color: $very-pale-blue;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 16px rgba($bright-blue, 0.1);
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        margin: 0;
+
+        transform: translate(-50%, -50%);
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        padding: 30px 25px 20px 25px;
+
+        font-family: $red-hat-display;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            padding: 40px 50px 30px 50px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        color: $dark-blue;
+        font-weight: 900;
+        font-size: 1.4em;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.8em;
+        }
+    }
+
+    &__text {
+        margin-bottom: 25px;
+
+        color: $desaturated-blue;
+        line-height: 25px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.1em;
+        }
+    }
+
+    &__plan-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 15px 10px;
+        margin-bottom: 25px;
+
+        background-color: rgba($pale-blue, 0.3);
+        border-radius: 10px;
+
+        @media screen and (min-width: 768px) {
+            padding: 25px 0;
+            margin-bottom: 35px;
+        }
+    }
+
+    &__plan-icon {
+        margin-right: 15px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 20px;
+        }
+    }
+
+    &__selected-plan {
+        margin-right: 50px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 100px;
+        }
+    }
+
+    &__plan-title {
+        margin-bottom: 3px;
+
+        font-size: 0.9em;
+        font-weight: 900;
+        color: $dark-blue;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1em;
+        }
+    }
+
+    &__plan-text {
+        color: $desaturated-blue;
+        font-size: 0.9em;
+        font-weight: 500;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+
+    &__plan-link {
+        font-size: 0.8em;
+        color: $bright-blue;
+        font-weight: 700;
+
+        @media screen and (min-width: 768px) {
+            font-size: 0.9em;
+        }
+    }
+
+    &__button {
+        display: block;
+
+        padding: 16px;
+
+        border-radius: 10px;
+
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9em;
+
+        &--blue {
+            margin-bottom: 10px;
+
+            background-color: $bright-blue;
+            box-shadow: 0 10px 15px rgba($bright-blue, 0.3);
+        
+            color: $very-pale-blue;
+        }
+
+        &--white {
+            background-color: transparent;
+
+            color: $desaturated-blue;
+            font-weight: 900;
+        }
+    }
+}
