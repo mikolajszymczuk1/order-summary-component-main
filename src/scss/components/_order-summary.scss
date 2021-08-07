@@ -129,6 +129,10 @@
         @media screen and (min-width: 768px) {
             font-size: 0.9em;
         }
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 
     &__button {
@@ -149,6 +153,10 @@
             box-shadow: 0 10px 15px rgba($bright-blue, 0.3);
         
             color: $very-pale-blue;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
 
         &--white {
@@ -156,6 +164,10 @@
 
             color: $desaturated-blue;
             font-weight: 900;
+
+            &:hover {
+                color: $dark-blue;
+            }
         }
     }
 }
