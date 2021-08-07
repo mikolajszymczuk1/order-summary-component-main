@@ -25,7 +25,51 @@
 </head>
 
 <body>
-    <h1>Hello World !!!</h1>
+    <!-- Background Patter -->
+    <div class="pattern">
+        <!-- For Mobile -->
+        <img class="pattern__image pattern__image--mobile" src="/src/svg/pattern-background-mobile.svg" alt="Pattern background image" title="Pattern background">
+        
+        <!-- For Desktop -->
+        <img class="pattern__image pattern__image--desktop" src="/src/svg/pattern-background-desktop.svg" alt="Pattern background image" title="Pattern background">
+    </div>
+
+    <!-- ====== Main section ====== -->
+    <main class="main-content">
+        <!-- Order summary card -->
+        <section class="order-summary" aria-label="order summary card">
+            <!-- Card's image -->
+            <img class="order-summary__image" src="/src/svg/illustration-hero.svg" alt="Card's header image" title="Card's header image">
+            
+            <!-- Card's content -->
+            <div class="order-summary__content">
+                <!-- Card's title -->
+                <h1 class="order-summary__title">Order Summary</h1>
+                
+                <!-- Card's main paragraph -->
+                <p class="order-summary__text">
+                    You can now listen to millions of songs, audiobooks, and podcasts on any 
+                    device anywhere you like!
+                </p>
+                
+                <!-- Selected plan container -->
+                <div class="order-summary__plan-group">
+                    <img class="order-summary__plan-icon" src="/src/svg/icon-music.svg" alt="Music icon image" title="Music icon">
+                    
+                    <div class="order-summary__selected-plan">
+                        <h2 class="order-summary__plan-title">Annual Plan</h2>
+                        <p class="order-summary__plan-text">$59.99/year</p>
+                    </div>
+
+                    <a class="order-summary__plan-link" href="#Change">Change</a>
+                </div>
+
+                <!-- Buttons -->
+                <a href="#Payment" class="order-summary__button order-summary__button--blue" aria-label="payment">Proceed to Payment</a>
+                <a href="#Cancel" class="order-summary__button order-summary__button--white" aria-label="cancel">Cancel Order</a>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
