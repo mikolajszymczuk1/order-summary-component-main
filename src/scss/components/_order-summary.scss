@@ -3,14 +3,21 @@
 
 // Styles for order summary card component
 .order-summary {
-    margin: 70px auto;
-
-    width: 85%;
-
     background-color: white;
-    border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 15px 16px rgba($bright-blue, 0.1);
+
+    @media screen and (min-width: 375px) {
+        margin: 70px auto;
+
+        width: 85%;
+
+        border-radius: 25px;
+        box-shadow: 0 20px 16px rgba($bright-blue, 0.15);
+    }
+
+    @media screen and (min-width: 600px) {
+        width: 60%;
+    }
 
     @media screen and (min-width: 768px) {
         width: 450px;
