@@ -1,8 +1,14 @@
 // Styles for patter background decoration component
 .pattern {
     &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+
         width: 100%;
         height: auto;
+
+        z-index: -1;
 
         &--mobile {
             @media screen and (min-width: 1024px) {
